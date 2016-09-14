@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+</style>
+<body>
+<canvas id="mycanvas" width="500" height="500">
+
+    当前不支持
+</canvas>
+
+</body>
+<script>
+    /*绘制canvas前两行代码必须有的 原样写即可*/
+    var mycanvas=document.getElementById("mycanvas");
+    var otex=mycanvas.getContext("2d");
+
+    otex.save();
+    otex.beginPath();
+    otex.arc(300,300,90,0,2*Math.PI);
+    otex.fillStyle="red";
+    otex.fill();
+    otex.restore();
+
+
+
+    /*白色的圆*/
+    otex.save();
+    otex.beginPath();
+    otex.arc(300,300,80,0,2*Math.PI);
+    otex.fillStyle="white";
+    otex.fill();
+    otex.restore();
+
+
+    /*h红色的圆*/
+    otex.save();
+    otex.beginPath();
+    otex.arc(300,300,70,0,2*Math.PI);
+    otex.fillStyle="red";
+    otex.fill();
+    otex.restore();
+
+    /*蓝色的圆*/
+    otex.save();
+    otex.beginPath();
+    otex.arc(300,300,55,0,2*Math.PI);
+    otex.fillStyle="blue";
+    otex.fill();
+    otex.restore();
+    /*五角星*/
+    otex.save();
+    otex.beginPath();
+    otex.strokeStyle="black";
+    otex.fillStyle="white";
+    otex.moveTo(300,265);
+    for(var i=0;i<12;i=i+2){
+//             半径             度数        弧度          圆心
+        var ox=55*Math.cos(i*72*Math.PI/180-Math.PI/2)+300;
+        var oy=55*Math.sin(i*72*Math.PI/180-Math.PI/2)+300;
+        otex.lineTo(ox,oy);
+    }
+    otex.stroke();
+    otex.fill();
+    otex.closePath();
+    otex.restore();
+
+
+</script>
+<body>
+
+</body>
+</html>
