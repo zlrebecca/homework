@@ -1,0 +1,44 @@
+#carousel {
+    height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+    background: #000;
+}
+
+#carousel .controlButton {
+    position: absolute;
+    top: 50%;
+    font-size: 40pt;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#carousel .preButton {
+    left: 60px;
+}
+
+#carousel .nextButton {
+    right: 60px;
+
+}
+
+#carouselContent {
+    position: absolute;
+}
+
+#divContainer {
+    position: absolute;
+    height: 30zpx;
+    float: right;
+    right: 50%;
+    bottom: 20px;;
+}
+
+#divContainer div{
+    background-color: #cccccc;
+}
+
+#divContainer #nowDIv{
+    background-color: rgba(30,144,255, 0.4);
+}
+
