@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cardA{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin:0 auto;
+    position: absolute;
+    display: block;
+}
+.cardB{
+    width: 0;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    margin:0 auto;
+    display: block;
+    left: 50px;
+}
+.content{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 20px auto;
+}
